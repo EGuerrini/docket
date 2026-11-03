@@ -1,0 +1,397 @@
+{
+ "about": "Simulated passes, synthetic (make_data.py).",
+ "passes": [
+  {
+   "P1": [
+    {
+     "line": 3,
+     "label": "SQL for reporting",
+     "verdict": "tick",
+     "question_group": "q-m01"
+    },
+    {
+     "line": 4,
+     "label": "Python scripting",
+     "verdict": "tick",
+     "question_group": "q-m02"
+    },
+    {
+     "line": 6,
+     "label": "Stakeholder workshops",
+     "verdict": "confirm",
+     "question_group": "q-m03"
+    },
+    {
+     "line": 7,
+     "label": "German C1",
+     "verdict": "confirm",
+     "question_group": "q-m04"
+    },
+    {
+     "line": 9,
+     "label": "Dashboard design",
+     "verdict": "tick",
+     "question_group": "q-m05"
+    }
+   ],
+   "P2": [
+    {
+     "line": 2,
+     "label": "Payments domain knowledge",
+     "verdict": "confirm",
+     "question_group": "payments"
+    },
+    {
+     "line": 3,
+     "label": "Card scheme rules",
+     "verdict": "confirm",
+     "question_group": "payments"
+    },
+    {
+     "line": 5,
+     "label": "Agile delivery",
+     "verdict": "tick",
+     "question_group": "q-m08"
+    },
+    {
+     "line": 6,
+     "label": "Product backlog ownership",
+     "verdict": "tick",
+     "question_group": "q-m09"
+    },
+    {
+     "line": 8,
+     "label": "Five years in banking",
+     "verdict": "confirm",
+     "question_group": "q-m10"
+    }
+   ],
+   "P3": [
+    {
+     "line": 2,
+     "label": "Machine learning evaluation",
+     "verdict": "confirm",
+     "question_group": "q-m11"
+    },
+    {
+     "line": 4,
+     "label": "Prompt design",
+     "verdict": "tick",
+     "question_group": "q-m12"
+    },
+    {
+     "line": 5,
+     "label": "Cloud cost monitoring",
+     "verdict": "confirm",
+     "question_group": "q-m13"
+    },
+    {
+     "line": 7,
+     "label": "Team leadership",
+     "verdict": "confirm",
+     "question_group": "q-m14"
+    },
+    {
+     "line": 8,
+     "label": "PhD in statistics",
+     "verdict": "cross",
+     "question_group": "q-m15"
+    }
+   ]
+  },
+  {
+   "P1": [
+    {
+     "line": 3,
+     "label": "SQL for reporting",
+     "verdict": "confirm",
+     "question_group": "q-m01"
+    },
+    {
+     "line": 4,
+     "label": "Python scripting",
+     "verdict": "tick",
+     "question_group": "q-m02"
+    },
+    {
+     "line": 6,
+     "label": "Stakeholder workshops",
+     "verdict": "cross",
+     "question_group": "q-m03"
+    },
+    {
+     "line": 7,
+     "label": "German C1",
+     "verdict": "cross",
+     "question_group": "q-m04"
+    },
+    {
+     "line": 9,
+     "label": "Dashboard design",
+     "verdict": "tick",
+     "question_group": "q-m05"
+    }
+   ],
+   "P2": [
+    {
+     "line": 2,
+     "label": "Payments domain knowledge",
+     "verdict": "confirm",
+     "question_group": "payments"
+    },
+    {
+     "line": 3,
+     "label": "Card scheme rules",
+     "verdict": "cross",
+     "question_group": "q-m07"
+    },
+    {
+     "line": 5,
+     "label": "Agile delivery",
+     "verdict": "confirm",
+     "question_group": "q-m08"
+    },
+    {
+     "line": 6,
+     "label": "Product backlog ownership",
+     "verdict": "confirm",
+     "question_group": "q-m09"
+    },
+    {
+     "line": 8,
+     "label": "Five years in banking",
+     "verdict": "cross",
+     "question_group": "q-m10"
+    }
+   ],
+   "P3": [
+    {
+     "line": 2,
+     "label": "Machine learning evaluation",
+     "verdict": "tick",
+     "question_group": "q-m11"
+    },
+    {
+     "line": 4,
+     "label": "Prompt design",
+     "verdict": "tick",
+     "question_group": "q-m12"
+    },
+    {
+     "line": 5,
+     "label": "Cloud cost monitoring",
+     "verdict": "confirm",
+     "question_group": "q-m13"
+    },
+    {
+     "line": 7,
+     "label": "Team leadership",
+     "verdict": "confirm",
+     "question_group": "q-m14"
+    },
+    {
+     "line": 8,
+     "label": "PhD in statistics",
+     "verdict": "cross",
+     "question_group": "q-m15"
+    }
+   ]
+  },
+  {
+   "P1": [
+    {
+     "line": 3,
+     "label": "SQL for reporting",
+     "verdict": "confirm",
+     "question_group": "q-m01"
+    },
+    {
+     "line": 4,
+     "label": "Python scripting",
+     "verdict": "tick",
+     "question_group": "q-m02"
+    },
+    {
+     "line": 6,
+     "label": "Stakeholder workshops",
+     "verdict": "confirm",
+     "question_group": "q-m03"
+    },
+    {
+     "line": 7,
+     "label": "German C1",
+     "verdict": "cross",
+     "question_group": "q-m04"
+    },
+    {
+     "line": 9,
+     "label": "Dashboard design",
+     "verdict": "tick",
+     "question_group": "q-m05"
+    }
+   ],
+   "P2": [
+    {
+     "line": 2,
+     "label": "Payments domain knowledge",
+     "verdict": "confirm",
+     "question_group": "payments"
+    },
+    {
+     "line": 3,
+     "label": "Card scheme rules",
+     "verdict": "confirm",
+     "question_group": "payments"
+    },
+    {
+     "line": 5,
+     "label": "Agile delivery",
+     "verdict": "tick",
+     "question_group": "q-m08"
+    },
+    {
+     "line": 6,
+     "label": "Product backlog ownership",
+     "verdict": "tick",
+     "question_group": "q-m09"
+    },
+    {
+     "line": 8,
+     "label": "Five years in banking",
+     "verdict": "cross",
+     "question_group": "q-m10"
+    }
+   ],
+   "P3": [
+    {
+     "line": 2,
+     "label": "Machine learning evaluation",
+     "verdict": "confirm",
+     "question_group": "q-m11"
+    },
+    {
+     "line": 4,
+     "label": "Prompt design",
+     "verdict": "tick",
+     "question_group": "q-m12"
+    },
+    {
+     "line": 5,
+     "label": "Cloud cost monitoring",
+     "verdict": "confirm",
+     "question_group": "q-m13"
+    },
+    {
+     "line": 7,
+     "label": "Team leadership",
+     "verdict": "cross",
+     "question_group": "q-m14"
+    },
+    {
+     "line": 8,
+     "label": "PhD in statistics",
+     "verdict": "cross",
+     "question_group": "q-m15"
+    }
+   ]
+  },
+  {
+   "P1": [
+    {
+     "line": 3,
+     "label": "SQL for reporting",
+     "verdict": "tick",
+     "question_group": "q-m01"
+    },
+    {
+     "line": 4,
+     "label": "Python scripting",
+     "verdict": "confirm",
+     "question_group": "q-m02"
+    },
+    {
+     "line": 6,
+     "label": "Stakeholder workshops",
+     "verdict": "confirm",
+     "question_group": "q-m03"
+    },
+    {
+     "line": 7,
+     "label": "German C1",
+     "verdict": "cross",
+     "question_group": "q-m04"
+    },
+    {
+     "line": 9,
+     "label": "Dashboard design",
+     "verdict": "tick",
+     "question_group": "q-m05"
+    }
+   ],
+   "P2": [
+    {
+     "line": 2,
+     "label": "Payments domain knowledge",
+     "verdict": "confirm",
+     "question_group": "payments"
+    },
+    {
+     "line": 3,
+     "label": "Card scheme rules",
+     "verdict": "confirm",
+     "question_group": "payments"
+    },
+    {
+     "line": 5,
+     "label": "Agile delivery",
+     "verdict": "confirm",
+     "question_group": "q-m08"
+    },
+    {
+     "line": 6,
+     "label": "Product backlog ownership",
+     "verdict": "tick",
+     "question_group": "q-m09"
+    },
+    {
+     "line": 8,
+     "label": "Five years in banking",
+     "verdict": "cross",
+     "question_group": "q-m10"
+    }
+   ],
+   "P3": [
+    {
+     "line": 2,
+     "label": "Machine learning evaluation",
+     "verdict": "tick",
+     "question_group": "q-m11"
+    },
+    {
+     "line": 4,
+     "label": "Prompt design",
+     "verdict": "tick",
+     "question_group": "q-m12"
+    },
+    {
+     "line": 5,
+     "label": "Cloud cost monitoring",
+     "verdict": "confirm",
+     "question_group": "q-m13"
+    },
+    {
+     "line": 7,
+     "label": "Team leadership",
+     "verdict": "cross",
+     "question_group": "q-m14"
+    },
+    {
+     "line": 8,
+     "label": "PhD in statistics",
+     "verdict": "cross",
+     "question_group": "q-m15"
+    }
+   ]
+  }
+ ]
+}

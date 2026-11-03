@@ -1,0 +1,41 @@
+# Runs the examples' tests, the prompt drift check, the guard's tests, and a secret scan.
+# Offline: no secrets, no deployment, no network beyond checkout and the pinned gitleaks download.
+name: examples
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: golden-set eval tests
+        run: cd examples/golden-set-eval && python3 -m unittest -v test_golden_eval
+      - name: grounding tests
+        run: cd examples/grounding && python3 -m unittest -v test_grounding
+      - name: prompt drift tests
+        run: cd examples/prompt-drift && python3 -m unittest -v test_drift
+      - name: prompt drift check
+        run: cd examples/prompt-drift && python3 emit.py --check
+      - name: guard tests
+        run: cd workflow && python3 -m unittest discover -v -s .claude/hooks/tests -t .claude/hooks/tests
+  secrets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      # Pinned rather than :latest, so a green scan always means the same rule set.
+      - name: gitleaks
+        env:
+          VERSION: 8.30.1
+        run: |
+          curl -sSfL -o gitleaks.tar.gz \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${VERSION}/gitleaks_${VERSION}_linux_x64.tar.gz"
+          tar -xzf gitleaks.tar.gz gitleaks
+          ./gitleaks git --redact --no-banner --exit-code 1 .

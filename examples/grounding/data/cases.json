@@ -1,0 +1,37 @@
+{
+  "about": "Synthetic: an invented posting (posting.txt), an invented resume, and model outputs with planted errors.",
+  "quotes": [
+    {"label": "SQL reporting", "line": 4},
+    {"label": "Workshops", "line": 6, "span": "running workshops with operations managers, finance and the engineering team"},
+    {"label": "Workshops (paraphrased)", "line": 6, "span": "running workshops with business stakeholders"},
+    {"label": "Workshops (too long)", "line": 6, "span": "Comfortable running workshops with operations managers, finance and the engineering team to agree on definitions, priorities and the order in which reports and data products are delivered over the year."},
+    {"label": "Contact", "line": 8},
+    {"label": "Invented line", "line": 12}
+  ],
+  "resume_lines": {
+    "r1": "Built weekly SQL reporting for a 40-person operations team.",
+    "r2": "Automated invoice checks in Python, saving about 6 hours a week.",
+    "r3": "Native Italian speaker; English C2."
+  },
+  "fit_rows": [
+    {"label": "SQL reporting", "verdict": "tick", "line": "r1"},
+    {"label": "Python automation", "verdict": "tick", "line": "r2"},
+    {"label": "Workshops", "verdict": "confirm", "line": "r1"},
+    {"label": "German or French", "verdict": "tick", "line": "r7"},
+    {"label": "German or French", "verdict": "cross", "line": null}
+  ],
+  "told": [
+    {"said": "I ran monthly workshops with finance to agree report definitions",
+     "label": "workshops with stakeholders",
+     "line": "Ran monthly workshops with finance to agree report definitions."},
+    {"said": "I ran monthly workshops with finance to agree report definitions",
+     "label": "workshops with stakeholders",
+     "line": "Ran 12 monthly workshops with finance to agree report definitions."},
+    {"said": "I ran monthly workshops with finance to agree report definitions",
+     "label": "workshops with stakeholders",
+     "line": "Led monthly workshops with finance and engineering leadership."},
+    {"said": "I have not used dbt, only plain SQL",
+     "label": "dbt",
+     "line": "Used dbt and plain SQL."}
+  ]
+}

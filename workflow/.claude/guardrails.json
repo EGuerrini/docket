@@ -1,0 +1,21 @@
+{
+  "_about": "Read by .claude/hooks/guard.py. own_hosts: the project's own services, the only hosts data may be sent to (a * matches within one label). protected_branches: never force-pushed or deleted. Public copy: the app's own deployment hostnames are removed.",
+  "protected_branches": [
+    "master"
+  ],
+  "own_hosts": [
+    "github.com",
+    "api.github.com",
+    "objects.githubusercontent.com",
+    "supabase.co",
+    "supabase.com",
+    "pooler.supabase.com",
+    "anthropic.com",
+    "vercel.com",
+    "resend.com",
+    "localhost",
+    "127.0.0.1",
+    "claude.ai",
+    "claude.com"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "_about": "The model and reasoning effort each kind of session gets, chosen by the ticket's Kind line. A session runs until its work is done, with no checkpoints.",
+  "tiers": {
+    "trivial": {
+      "model": "claude-haiku-5-5",
+      "effort": "low",
+      "for": "file a document, update a page, move or rename files; no code, no decision"
+    },
+    "mechanical": {
+      "model": "claude-sonnet-5-5",
+      "effort": "medium",
+      "for": "a test-only or one-line fix, a run sheet followed step by step, a read-only count"
+    },
+    "build": {
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "for": "a feature or fix with tests seen failing first, a stuck bug, a measured AI-quality iteration, a production-write tool; the coordinating session of a night sitting"
+    },
+    "deep": {
+      "model": "claude-fable-5-1",
+      "effort": "high",
+      "for": "planning, architecture and schema design, legal or terms analysis, a risky review; plans and reviews, never builds"
+    }
+  }
+}

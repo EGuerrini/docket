@@ -1,0 +1,20 @@
+{
+  "about": "Synthetic golden set: three invented postings (P1-P3), fifteen marks. A mark is the verdict(s) the owner accepts for one requirement line. Marks with the same bundle must be asked in one question.",
+  "marks": [
+    {"id": "m01", "job": "P1", "line": 3, "label": "SQL for reporting", "expect": ["tick"]},
+    {"id": "m02", "job": "P1", "line": 4, "label": "Python scripting", "expect": ["tick", "confirm"]},
+    {"id": "m03", "job": "P1", "line": 6, "label": "Stakeholder workshops", "expect": ["confirm"]},
+    {"id": "m04", "job": "P1", "line": 7, "label": "German C1", "expect": ["cross"]},
+    {"id": "m05", "job": "P1", "line": 9, "label": "Dashboard design", "expect": ["tick"]},
+    {"id": "m06", "job": "P2", "line": 2, "label": "Payments domain knowledge", "expect": ["confirm"], "bundle": "payments"},
+    {"id": "m07", "job": "P2", "line": 3, "label": "Card scheme rules", "expect": ["confirm"], "bundle": "payments"},
+    {"id": "m08", "job": "P2", "line": 5, "label": "Agile delivery", "expect": ["tick"]},
+    {"id": "m09", "job": "P2", "line": 6, "label": "Product backlog ownership", "expect": ["tick", "confirm"]},
+    {"id": "m10", "job": "P2", "line": 8, "label": "Five years in banking", "expect": ["cross"]},
+    {"id": "m11", "job": "P3", "line": 2, "label": "Machine learning evaluation", "expect": ["tick"]},
+    {"id": "m12", "job": "P3", "line": 4, "label": "Prompt design", "expect": ["tick", "confirm"]},
+    {"id": "m13", "job": "P3", "line": 5, "label": "Cloud cost monitoring", "expect": ["confirm"]},
+    {"id": "m14", "job": "P3", "line": 7, "label": "Team leadership", "expect": ["confirm"]},
+    {"id": "m15", "job": "P3", "line": 8, "label": "PhD in statistics", "expect": ["cross"]}
+  ]
+}

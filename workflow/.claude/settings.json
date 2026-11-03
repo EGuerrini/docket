@@ -1,0 +1,25 @@
+{
+  "_about": "docket's guard: .claude/hooks/guard.py refuses only the hard rules' cases (secrets, data sent to an outside host, running a download, force pushes). It lives in the repository so every worktree carries it.",
+  "permissions": {
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Edit(.env)",
+      "Edit(.env.*)",
+      "Write(.env)",
+      "Write(.env.*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {"hooks": [{"type": "command", "command": "python3 \"${CLAUDE_PROJECT_DIR}/.claude/hooks/session_start.py\"", "timeout": 15}]}
+    ],
+    "PreToolUse": [
+      {"hooks": [{"type": "command", "command": "python3 \"${CLAUDE_PROJECT_DIR}/.claude/hooks/guard.py\"", "timeout": 45}]}
+    ]
+  }
+}
