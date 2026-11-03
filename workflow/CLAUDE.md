@@ -21,8 +21,6 @@ is Python on GitHub Actions; a Supabase Postgres database sits between them.
 7. Risks go to the founder as decisions, never filed as housekeeping.
 8. Nothing that loosens the security or compliance posture is chosen without asking the founder.
 
-The private copy keeps retired rule numbers because checks cite them.
-
 ## Product invariants
 - No auto-apply and no auto-send, ever: a person approves every outbound action.
 - Votes are training data. Scoring changes one variable at a time, and every scoring change can be replayed offline.

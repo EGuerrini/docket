@@ -11,7 +11,7 @@ import unittest
 HERE = os.path.dirname(os.path.abspath(__file__))
 GUARD = os.path.join(HERE, "..", "guard.py")
 REPO = os.path.realpath(os.path.join(HERE, "..", "..", ".."))
-SECRET = "." + "env"
+SECRET = "." + "env"  # spelled in two parts so the guard never trips on this file's own text
 
 
 def run(tool, tool_input, cwd=REPO, **env):

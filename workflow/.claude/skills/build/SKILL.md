@@ -5,7 +5,7 @@ description: Build a ticket or a hotfix test-first, from reading the ticket to t
 
 # Build a ticket
 
-A ticket is a file, ~/.docket/briefs/<spec>/NN-<slug>.md (format: docs/agents/issue-tracker.md), or a message from
+A ticket is a file, ~/.docket/briefs/<spec>/NN-<slug>.md (format: workflow/ticket-format.md), or a message from
 the founder. One session takes it on its own branch and worktree, through to master.
 
 ## 1. Understand

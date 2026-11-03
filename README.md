@@ -6,8 +6,8 @@ owner and engineer, with AI coding agents writing most of the code under rules, 
 set up.
 
 I'm Edoardo Guerrini, an AI product manager in Zürich. At EY I take enterprise AI products from
-discovery to production. docket is where I practise the same craft end to end: deciding what to
-build, measuring model quality before shipping, and keeping the product honest about what it knows.
+discovery to production. docket is where I do the whole job myself: decide what to build, measure
+model quality before shipping, and make the app claim only what it can show.
 
 <a href="https://eguerrini.github.io/docket/"><img src="poster.jpg" width="300" alt="Watch the two-minute demo"></a>
 
@@ -147,13 +147,14 @@ Changes the evals stopped:
 | Change tried | Result | Outcome |
 | --- | --- | --- |
 | Haiku 5.5 instead of Sonnet 5.5 for the fit read | 48 and 47 of 75, against 52 and 54 | Not shipped |
-| Medium reasoning effort instead of low | mean 54.75 against 57.5 | Not shipped: lower and slower |
+| Medium reasoning effort instead of low | mean 54.75 against 57.5 | Not shipped: no gain beyond the noise, and slower |
 | A looser "parts" rule in the fit prompt | mean 53.5 against 57.5, though higher on two other sets | Not shipped: the golden set ranks first |
 | A fit prompt where the job title decides | +1.00 marks, interval −2.50 to +4.75 | Inside the noise, not shipped |
 | Rewritten resume bullets | lost 26 to 38 in the blind test | Removed from the product |
 | A new tailor writer the judge preferred | 5.2 refused lines per 100, against a limit of 3 | Not shipped |
 
-The first row ran on 8 October. Later that day I relabelled five marks after reviewing them, which
+The first row ran on 8 October. Later that day, reviewing marks where the model disagreed with me, I
+agreed with it on five and relabelled them, which
 moved Sonnet's baseline to a mean of 57.5 over four runs; the later rows compare against that.
 
 Evals run before a prompt or model change ships, and each result is recorded in the decision log. CI
@@ -179,12 +180,12 @@ A reduced, runnable version of the harness: [`examples/golden-set-eval`](example
 ## How it's built
 
 I wrote the specs, made the product decisions, labelled the evals and tested every feature on a
-phone. Coding agents built from tickets, each in its own branch, and the only way onto the main
-branch is a landing script that runs the checks, collects live evidence and passes a
+phone. Coding agents built from tickets, each in its own branch, and the only way an agent session
+can reach the main branch is a landing script that runs the checks, collects live evidence and passes a
 definition-of-done gate. [`workflow/WORKFLOW.md`](workflow/WORKFLOW.md) explains the process and why
 each rule exists; the agent instruction files, skills and the safety hook are copied there.
 
-By late October the private repository had 16 hiring-system adapters, 23 versioned prompt files, a
+By late October the private repository, most of it written by agents, had 16 hiring-system adapters, 23 versioned prompt files, a
 decision log of 884 entries (each with its reasoning, what was rejected and how to reverse it), and
 about 245 test files across Python, Playwright and TypeScript.
 

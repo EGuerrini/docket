@@ -5,8 +5,8 @@ decides product and tests every feature himself on a phone. In the private repos
 between 2026-09-16 and 2026-10-22. This page describes the system that makes that workable, with a line on why each
 rule exists. Examples are paraphrased from the repository's history.
 
-Everything under workflow/.claude is configuration for coding agents, written as instructions to them, not a
-description of how people on a team are treated.
+The files under workflow/.claude are addressed to programs: "never" and "refuses" there are instructions to an
+agent.
 
 Every rule below is a file in this folder or in the private repo. The ones copied here:
 
@@ -88,9 +88,10 @@ actual reads, writes and sources, and the narrowed shapes became test cases.
 
 ## 5. Review: a gate, AI judges, and the founder's own testing
 
-`dk land <ticket>` is the only way onto master. It runs `dk check`, gathers live evidence for each
-acceptance line, runs the definition-of-done gate, commits, rebases, pushes as a fast-forward and
-watches CI. The guard refuses every hand-typed push to master.
+`dk land <ticket>` is the only way an agent session can reach master. It runs `dk check`, gathers live
+evidence for each acceptance line, runs the definition-of-done gate, commits, rebases, pushes as a
+fast-forward and watches CI. The guard refuses every other push to master an agent types. It is a hook on
+the agent's tools, so it binds agents, not a person at their own terminal.
 
 The gate checks, in code: the full offline check suite; every acceptance line traced to a passing test;
 the ticket's own tests run and their earlier failing run quoted. Two model judges also run in the gate. A diff
@@ -125,7 +126,8 @@ paired, repeated passes, and it ships only if it beats the noise. The method is 
 Real outcomes from the decision log (paraphrased). Production reads and scoring run on Haiku 4.5; the fit read,
 which checks a resume against a posting's requirements, runs on Sonnet 5.5.
 - On 2026-10-08 the cheaper Haiku 5.5 was tried as the fit read's model. It scored 48 and 47 of 75 against
-  Sonnet 5.5's 52 and 54, under a bar of 49 on both passes that was set before the run, so it was not shipped.
+  Sonnet 5.5's 52 and 54. The bar, set before the run, was 49 or more of 75 on both passes, within three marks of
+  Sonnet, so it was not shipped.
 - Later that day five golden-set marks were relabelled, and Sonnet 5.5's baseline became a mean of 57.5 over four
   runs. Against that baseline, medium reasoning effort instead of low scored a mean of 54.75, a looser rule for
   matching the parts of a requirement scored 53.5, and a "the job title decides" prompt scored +1.00 marks with an

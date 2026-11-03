@@ -21,6 +21,7 @@ personal links and contact names before the model reads a posting).
 
 ```
 SQL reporting              kept: Strong SQL and experience building reporting for non-technical stakeholders.
+Workshops                  kept: running workshops with operations managers, finance and the engineering team
 Workshops (paraphrased)    dropped: span not in its line
 Workshops (too long)       dropped: span over 25 words
 Contact                    dropped: quote carries a removal

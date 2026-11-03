@@ -5,7 +5,7 @@ description: Cut a spec into tracer-bullet ticket files under ~/.docket/briefs/<
 
 # To tickets
 
-The ticket format is docs/agents/issue-tracker.md (ticket-format.md in this folder). The dispatcher and the gate
+The ticket format is workflow/ticket-format.md. The dispatcher and the gate
 parse those fields, so read it before writing a ticket.
 
 ## Slice into tracer bullets
