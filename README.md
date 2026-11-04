@@ -5,9 +5,14 @@ what you can prove, and helps you tailor and apply yourself.** I built it on my 
 owner and engineer, with AI coding agents writing most of the code under rules, tests and checks I
 set up.
 
-I'm Edoardo Guerrini, an AI product manager in Zürich. At EY I take enterprise AI products from
-discovery to production. docket is where I do the whole job myself: decide what to build, measure
-model quality before shipping, and make the app claim only what it can show.
+I'm Edoardo Guerrini, an AI product manager in Zürich. At a Big Four firm I take enterprise AI
+products from discovery to production. docket is where I do the whole job myself: decide what to
+build, measure model quality before shipping, and make the app claim only what it can show.
+
+**At a glance** (private repository, 16 September to 22 October 2026):
+**2,238 commits in five weeks**, most written by coding agents · **245 test files** across Python,
+Playwright and TypeScript · **884 recorded decisions**, each with its reasoning and how to reverse it ·
+**16 hiring-system adapters** · a **75-mark golden set** I labelled by hand to measure model quality.
 
 <a href="https://eguerrini.github.io/docket/"><img src="poster.jpg" width="300" alt="Watch the two-minute demo"></a>
 
@@ -185,9 +190,8 @@ can reach the main branch is a landing script that runs the checks, collects liv
 definition-of-done gate. [`workflow/WORKFLOW.md`](workflow/WORKFLOW.md) explains the process and why
 each rule exists; the agent instruction files, skills and the safety hook are copied there.
 
-By late October the private repository, most of it written by agents, had 16 hiring-system adapters, 23 versioned prompt files, a
-decision log of 884 entries (each with its reasoning, what was rejected and how to reverse it), and
-about 245 test files across Python, Playwright and TypeScript.
+Prompts live as 23 versioned files, and the decision log records for each entry what was decided,
+why, what was rejected and how to reverse it.
 
 ## Running the examples
 
@@ -201,3 +205,7 @@ python3 -m unittest discover -s examples/grounding -t examples/grounding    # an
 ```
 
 CI runs all of them: [`.github/workflows/examples.yml`](.github/workflows/examples.yml).
+
+## License
+
+The code in `examples/` and `workflow/` is MIT-licensed; the write-up and the demo video are shared for viewing. See [LICENSE](LICENSE).
